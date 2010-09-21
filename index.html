@@ -34,7 +34,8 @@
 
       <p> 
       Please subscribe to the MAT 201B Fall 2010
-      <a href="http://www.mat.ucsb.edu/forum/viewforum.php?f=25">class forum</a>.
+      <a href="http://www.mat.ucsb.edu/forum/viewforum.php?f=46">class forum</a> (go 
+      <a href="http://www.mat.ucsb.edu/forum/viewtopic.php?f=17&t=12">here</a> for information on how to subscribe to the forum).
       Announcements and assignments will posted there, along with links to
       articles, code, and other resources.
 
@@ -44,7 +45,7 @@
 	<a class="week">Week 1: Course Overview</a> 
  
         <br> 
-	Topics: Introduction to Processing syntax and environment; The git vcs    
+	Topics: Introduction to Processing syntax and environment; The git vcs; Unix commands    
 	
         <br> 
         <hr> 
@@ -95,388 +96,33 @@
           <a href="http://tortoisesvn.tigris.org/">Tortoise Subversion</a>. For git, see <a href="http://git-scm.com/">http://git-scm.com</a>.
       </div> 
  
-      <div class="topic"> 
-        <a class="week">Week 1: Introduction to OpenGL; The Rendering Pipeline</a> 
- 
-        <br> 
-        Topics: Introduction to OpenGL, vectors, matrices, homogeneous coordinates,
-        affine and perspective transformations.
-        <br> 
-        <hr> 
-        Links: [<a href="docs/RedBook.pdf">OpenGL Red Book (intro to OpenGL)</a>]
-        [<a href="http://www.opengl.org/resources/features/KilgardTechniques/oglpitfall/">Avoiding Pitfalls in OpenGL</a>]
-        [<a href="http://www.songho.ca/opengl/index.html">OpenGL Exposition and Tutorials</a>]
-        [<a href="http://www.opengl.org/sdk/docs/man/xhtml/">OpenGL Reference Pages</a>]
- 
-        [<a href="Week1/homog-coords.pdf">Homogeneous Coordinates</a>]
- 
-        <hr> 
-        Slides: [<a href="Week1/Spring2010_Week1-Day1.pptx">Week 1, Day 1 Slides</a>]
-        [<a href="Week1/Spring2010_Week1-Day2.pptx">Week 1, Day 2 Slides</a>]
-        <hr> 
-        Processing Demos: [<a href="Week1/VertexTransformation.zip">Vertex Transformation</a>]
-        [<a href="Week1/OPENGL_ex1.zip">Lighting Demo</a>]
-        [<a href="Week1/OPENGL_ex2.zip">Animation Demo</a>]
-        [<a href="Week1/OPENGL_ex3.zip">Texture Demo</a>]
-        <hr> 
-        Assignment due 04/01/10: Set up an OpenGL environment of your choice on your
-        laptop and make sure you can run the basic tutorials
-        from the <a href="http://nehe.gamedev.net/lesson.asp?index=01">Nehe</a> OpenGL tutorial website.
- 
-        <!--
-        Lab: [<a href="http://www.opengl.org/documentation/glsl/">OpenGL Shading Language</a>]
-        [<a href="http://nehe.gamedev.net/data/articles/article.asp?article=21">NeHe GLSL Tutorial</a>] [<a href="http://glew.sourceforge.net/">OpenGL Extension Wrangler</a>] [<a href="http://www.mat.ucsb.edu/projects/luaAV/browser/branches/mergathon/modules/Muro/src/glo/GLSLBackend.cpp">Muro GLSL Backend</a>]
-        <hr>
-        Code: [<a href="code/movieShader.zip">ofShader Example</a>] [<a href="code/ofxShader.zip">modded ofxShader</a>] [<a href="code/Muro.594cm.zip">Muro-GLUT Shader Example</a>]
-        --> 
- 
-      </div> 
- 
-      <div class="topic"> 
-        <a class="week">Week 2: OpenGL Basics</a> 
-        <br> 
-        Topics: Animation, easing functions, cameras, textures, lighting, materials.
-        <hr> 
-        Processing Demos: [<a href="Week2/RawOpenGL.zip">OpenGL / 6DOF Camera / Simple Animation</a>]
-        <hr> 
-        Links: [<a href="http://www.timotheegroleau.com/Flash/experiments/easing_function_generator.htm">Easing Generator</a>]
-        [<a href="http://glprogramming.com/red/chapter05.html">Red Book - "Lighting and Materials"</a>]
-        [<a href="http://www.sjbaker.org/steve/omniv/opengl_lighting.html">Lighting Tutorial</a>]
-        [<a href="http://glprogramming.com/red/chapter09.html">Red Book - "Texture Mapping"</a>]
-        [<a href="http://www.gamedev.net/reference/articles/article947.asp">GameDev Texture Mapping Introduction</a>]
-        [<a href="http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=06">Nehe Texture lesson</a>]
-        <hr> 
-        Slides: [<a href="Week2/Spring2010_Week2-Day1.pptx">Week 2 Slides</a>]
-        <hr> 
-        Assignment due 04/20/10: <a href="ProblemSet1.html">Problem Set 1</a> 
-      </div> 
- 
- 
-      <div class="topic"> 
-        <a class="week">Week 3: Numerical Methods; Physics Simulations; Vertex Rendering </a> 
-        <br> 
-        Topics: Implicit/explicit Euler, Runge-Kutta, Verlet integration, Physical simulation, Particle systems, Vertex Arrays, Vertex Buffer Objects, Display Lists.
-        <hr> 
-        Processing Demos: [<a href="Week3/MAT594CM_SpringExample.zip">Numerical Methods / Spring Simulation</a>]
-        [<a href="Week3/MAT594cm_clothDemo.zip">Cloth Simulation</a>]
-        [<a href="Week3/MAT594cm_springgraph.zip">Spring Graph</a>]
-        <hr> 
-        JOGL code: [<a href="Week3/VertexRenderingSnippetsJOGL.zip">JOGL code for Display Lists, Vertex Arrays, VBOs</a>]
-        <hr> 
-        Links:
-        [<a href="http://www.songho.ca/opengl">Song Ho Ahn's OpenGL Tutorials</a>]
-        [<a href="http://www.teknikus.dk/tj/gdc2001.htm">Advanced Character Physics</a>]
-        [<a href="http://www.pixar.com/companyinfo/research/pbm2001/pdf/slidesc.pdf">Andrew Witkin's Particle System Slides</a>]
-        [<a href="docs/dynamics.eqns.pdf">Dynamics Equations</a>]
-        [<a href="http://glprogramming.com/red/chapter07.html">"Display Lists" - Red book</a>]
-        [<a href="http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=45">Nehe Vertex Array & VBO lesson</a>]
-        [<a href="http://developer.nvidia.com/attach/6427">"Using VBOs" - Nvidia white paper</a>]
-        <hr> 
-        Slides: [<a href="Week3/Spring2010_Week3.pptx">Week 3 Slides</a>]
-      </div> 
- 
- 
-      <div class="topic"> 
-        <a class="week">Week 4: Curves and Surfaces; Introduction to GLSL Shaders</a> 
-        <br> 
-        Topics: Parametric curves, Bezier curves, Hermite curves, 
-        Catmull-Rom splines, b-splines, NURBS curves and surfaces, vertex shaders, fragment shaders.
-        <br> 
-        <hr> 
-        Links:
-        [<a href="http://www.glprogramming.com/red/chapter12.html">Red book - "Evaluators & NURBS"</a>]
-        [<a href="http://www.cs.helsinki.fi/group/goa/mallinnus/curves/curves.html">Parametric Curves Tutorial</a>]
-        [<a href="http://www.vis.uni-stuttgart.de/~kraus/LiveGraphics3D/cagd/">Curves and Surfaces for CAGD demo applets</a>]
-        [<a href="http://www.opengl.org/documentation/glsl/">OpenGL Shading Language reference and spec</a>]
-        [<a href="http://mew.cx/glsl_quickref.pdf">GLSL Quick Reference</a>]
-        [<a href="http://nehe.gamedev.net/data/articles/article.asp?article=21">NeHe GLSL Tutorial</a>] 
-        [<a href="http://users.design.ucla.edu/~acolubri/processing/glgraphics/home/">Andres Colubri's GLGraphics Processing Library</a>]
-      
-        <hr> 
-        Code:
-        [<a href="http://www.opengl.org/resources/code/samples/redbook/bezcurve.c">Basic openGL Bezier curve code - bezcurve.c</a>]
-        [<a href="http://www.opengl.org/resources/code/samples/redbook/surface.c">Basic openGL NURBS code - surface.c</a>]
-        [<a href="Week4/BasicShader.zip">Simple Processing shading loader / basic vertex & fragment shaders</a>]
-        <hr> 
-        Slides:
-        [<a href="Week4/Spring2010_Week4_day1.pptx">Week 4, day 1 Slides</a>]
-        [<a href="Week4/Spring2010_Week4_day2.pptx">Week 4, day 2 Slides</a>]
-        <hr> 
-        Assignment due 05/04/10: <a href="ResearchProject.html">Research Project</a> 
- 
- 
-      </div> 
- 
-      <div class="topic"> 
-        <a class="week">Week 5: GLSL Basics</a> 
-        <br> 
-        Topics: GLSL syntax, vertex displacement, per-pixel lighting, multi-texturing.
-        <br> 
- 
-        <hr> 
-        Processing Demos:
-        [<a href="Week5/VertexDisplacement.zip">Vertex Displacement</a>]
-        [<a href="Week5/PerVertexMaterialLighting.zip">Per-Vertex Lighting</a>]
-        [<a href="Week5/PerPixelMaterialLighting.zip">Per-Pixel Lighting</a>]
-        [<a href="Week5/MultiTexture.zip">Multi-texturing</a>]
-        <hr> 
-        Real-Time GPU Demos:
-        [<a href="http://www.nvidia.com/object/cool_stuff.html#/demos">Nvidia GPU demos</a>]
-        [<a href="http://developer.amd.com/samples/demos/Pages/default.aspx">ATI GPU demos</a>]
-        [<a href="http://www.farb-rausch.com/">Farbrausch demoscenes</a>]
-        [<a href="http://awards.scene.org/">scene.org demoscene awards</a>]
-        [<a href="http://demo.monostep.org/">monostep.org demoscenes</a>]
-        [<a href="http://www.pouet.net/">pouet.net demoscenes</a>]
-        <hr> 
-        Links:
-        [<a href="http://3dshaders.com/home/index.php?option=com_weblinks&task=view&catid=14&id=13">OpenGL Orange Book GLSL examples</a>]
-        [<a href="http://www.opengl.org/sdk/docs/tutorials/TyphoonLabs/">Typhoon Labs GLSL Courses</a>]
-        [<a href="http://www.swiftless.com/glsltuts.html">Swiftless GLSL Tutorials</a>]
-        [<a href="http://en.wikipedia.org/wiki/Phong_shading">Phong shading</a>]
-        [<a href="http://en.wikipedia.org/wiki/Demoscene">Wikipedia: Demoscene</a>]
- 
-        <hr> 
-        Slides:
-        [<a href="Week5/Spring2010_Week5_day1.pptx">Week 5 Slides</a>]
-        <hr> 
-        Guest: Jonathan Ventura of the UCSB <a href="http://ilab.cs.ucsb.edu/">Four Eyes Lab</a> discusses recent research
-        in augmented reality, multiple view geometry, and computer graphics.
-      </div> 
- 
-      <div class="topic"> 
-        <a class="week">Week 6: Research Presentations</a><br> 
- 
- 
-        <a href="http://syedrezaali.com/MAT/594CM/research2010.html">Blueprint Rendering</a>, Syed Reza Ali
-        <br> 
-        <a href="http://mat.ucsb.edu/dannyfan/594CM_2010S_project2.html">Particle System with Collision Detection</a>, YanYi Fan
-        <br> 
-        <a href="adams_rp1/index.html">Bump Mapping</a>, David Adams
-        <br> 
-        <a href="benalunjones-rp1/index.html">OpenCL</a>, Ben Alun-Jones
-        <br> 
-        <a href="qian-rp1/594CM_Research.html">Sketchy Drawings</a>, Qian Liu
-        <br> 
-        <a href="http://mat.ucsb.edu/ritesh/594CM.html">Homogeneous Transforms / OpenCV</a>, Ritesh Lala
-        <br> 
-        <a href="http://www.mat.ucsb.edu/delaneyj/?p=300">Conjugate Gradient Solutions and Sparse Matrix Classes</a>, John Delaney
-        <br> 
-        <a href="bryce-rp1/index.html">Metaballs and Particle Physics</a>, Bryce Yoshimura
- 
-        <br> 
- 
-        <hr> 
-        Guest: MAT student and <a href="http://www.allosphere.ucsb.edu/">Allosphere</a> researcher <a href="http://www.mat.ucsb.edu/basak.alper/portfoy/">Basak Alper</a> 
-        presents highlights
-        from the recent <a href="http://www.chi2010.org/">CHI 2010</a> conference.
-      </div> 
- 
-      <div class="topic"> 
-        <a class="week">Week 7: Computational Geometry</a> 
- 
-        <!-- <a class="week">Week 6: Rotations and Orientation</a> --> 
-        <br> 
-        Topics: Computational complexity, convex hulls, Voronoi diagrams, Delaunay triangulations.
- 
-        <!--     Topics: Rotation matrices, Euler angles, axis-angle, quaternions, rotation interpolation. --> 
-        <hr> 
-        Links:
-        [<a href="http://en.wikipedia.org/wiki/Big_O_notation">"Big O Notation" - Wikipedia</a>]
-        [<a href="http://www.ams.org/featurecolumn/archive/voronoi.html">"Voronoi Diagrams and A Day at the Beach" - David Austin</a>]
-        [<a href="http://www.henrikzimmer.com/VoronoiDelaunay.pdf">"Voronoi and Delaunay Techniques" - Henrik Zimmer</a>]
-        [<a href="http://www.wblut.com/constructs/voronoiFractal/voronoiFractal.php">"Voronoi Fractals" - W:BLUT</a>]
-        [<a href="http://matsysdesign.com/category/projects/voronoi-morphologies/">"Voronoi Morphologies" - Andrew Kudless</a>]
-        [<a href="http://www.flong.com/projects/yearbook/">"Yearbook Photos" - Golan Levin</a>]
-        [<a href="http://www.qhull.org/">QHull library for convex hull, voronoi, and delaunay algorithms</a>]
-        <hr> 
-        Guests: MAT student <a href="http://www.thepersistentbeat.com/Tech.html">Greg Shear</a> 
-        discusses and demonstrates his GPU implementation of the <a href="http://en.wikipedia.org/wiki/Oren%E2%80%93Nayar_Reflectance_Model">Oren-Nayar reflectance model</a>.
-        MAT student <a href="http://www.charlie-roberts.com/">Charlie Roberts</a> discusses <a href="http://en.wikipedia.org/wiki/Stereoscopy">stereographic rendering</a> 
-        and his research in the <a href="http://www.allosphere.ucsb.edu/">Allosphere</a> 
-        and demonstrates the <a href="http://angusforbes.github.com/stereo/">Stereo library for Processing</a>.
-        <!--
-             <hr>
-             Links:
-             [<a href="http://portal.acm.org/citation.cfm?id=325242">Animating rotation with quaternion curves</a>]
-             [<a href="http://embots.dfki.de/doc/seminar_ca/Kremer_Quaternions.pdf">Quaternions and SLERP</a>]
-             [<a href="http://www.geometrictools.com/Documentation/RotationIssues.pdf">Rotation Representations and Performance Issues</a>]
-             [<a href="http://geometricalgebra.org/">Geometric Algebra</a>]
-             [<a href="http://www.science.uva.nl/research/isla/pub/gpce32-fontijne.pdf">Gaigen 2: a Geometric Algebra Implementation Generator</a>]
- 
- 
-             <hr>
- 
-             Lab:
-             [<a href="http://glprogramming.com/red/chapter07.html">"Display Lists" - Red book</a>]
-             [<a href="http://nehe.gamedev.net/data/lessons/lesson.asp?lesson=45">Nehe Vertex Array & VBO lesson</a>]
-             [<a href="http://developer.nvidia.com/attach/6427">"Using VBOs" - Nvidia white paper</a>]
-             [<a href="http://www.songho.ca/opengl/gl_vbo.html">Dynamic VBO example - Song Ho Ahn</a>]
- 
-             <hr>
- 
-             Code:
-             [<a href="http://www.cs.indiana.edu/~hanson/quatvis/code/quatcodekit.txt">Quaternion Survival Kit</a>]
-             [<a href="http://geometricalgebra.org/sandbox.html">GA Sandbox</a>]
- 
-        --> 
-      </div> 
- 
- 
-      <div class="topic"> 
-        <a class="week">Week 8: Partitioning Space and Collisions</a> 
- 
-        <br> 
-        Topics: Binary Space Partitioning, Octrees, Bounding Box Approximations, Separating Axis Theorem, GJK
-        <br> 
- 
-        <hr> 
-        Links:
-        [<a href="http://www.gamedev.net/reference/articles/article657.asp">BSP Tree FAQ</a>]
-        [<a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">"Advanced Collision Detection Techniques" - Nick Bobic</a>]
-        [<a href="http://www.cs.unc.edu/~geom/collide/">GAMMA Collision Detection research page</a>]
-        [<a href="http://www.metanetsoftware.com/technique/tutorialA.html">Separating Axis Theorem applets</a>]
-        [<a href="http://www.pfirth.co.uk/minkowski.html">Minkowski Difference applet</a>]
-        [<a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=2083">"A fast procedure for computing the distance between complex objects in three-dimensional space" - Gilbert, Johnson, Keerthi</a>]
-        [<a href="http://mollyrocket.com/849">"Implementing GJK" - Casey Muratori</a>]
-        [<a href="http://web.comlab.ox.ac.uk/people/Stephen.Cameron/distances/">GJK code - OUCL</a>]
- 
- 
- 
-        <br> 
- 
-        <hr> 
-        Guest: <a href="http://www.math.ucsb.edu/~briefly">Brie Finegold</a>, UCSB researcher in
-        <a href="http://en.wikipedia.org/wiki/Geometric_group_theory">Geometric Group Theory</a>, discusses topics in topology.
-        <hr> 
-        Deadline: Projects for the <a href="http://www.mat.ucsb.edu/show/">End of the Year Show</a> (May 24th-28th) are due this weekend!
-        [<a href="http://www.mat.ucsb.edu/show/wp-content/themes/carrington-blog/EOYshow_images/Booklet_Schedule.pdf">schedule</a>]
- 
-      </div> 
- 
-      <div class="topic"> 
- 
-        <a class="week">Week 9: Surfaces and Topology</a> 
-        <br> 
-        Topics: Subdivision surfaces, topological properties and representation
-        <hr> 
-        [<a href="http://sketchesoftopology.wordpress.com/">"Sketches of Topology" - Kenneth Baker</a>]
- 
-        [<a href="http://spacesymmetrystructure.wordpress.com/">"Space Symmetry Structure" - Daniel Piker</a>]
-        [<a href="http://www.niksula.cs.hut.fi/~hkankaan/Homepages/metaballs.html">Metaball Math</a>]
-        [<a href="http://www.gamasutra.com/features/20000411/sharp_01.htm">"Subdivision Surface Theory" - Brian Sharpe</a>]
-        [<a href="http://www.gamasutra.com/features/20000425/sharp_01.htm">"Implementing Subdivision Surface Theory" - Brian Sharpe</a>]
-        [<a href="http://www.michael-hansmeyer.com/html/index.html">"Platonic Solids" - Michael Hansmeyer</a>]
-       
-        <hr> 
-        Guest: MAT student <a href="http://wolftype.com">Pablo Colapinto</a> discusses
-        <a href="http://en.wikipedia.org/wiki/Geometric_algebra">Geometric Algebra</a> 
-        and demonstrates his implementation of a fast GA library.
-      </div> 
- 
-      <div class="topic"> 
-        <a class="week">Week 10: Final Projects</a> 
-        <br> 
-        <a href="http://syedrezaali.com/MAT/594CM/finalproject2010.html">BioRhythm</a>, Syed Reza Ali<br> 
-        <a href="bryceFinal/594cm.html">Classical Ising</a>, Bryce Yoshimura<br> 
-        <a href="http://www.mat.ucsb.edu/dannyfan/MAT594CM">BioRhythm & BioSuperFormula</a>, YuanYi Fan<br> 
-        <a href="http://mat.ucsb.edu/ritesh/594index.html">Re-Act</a>, Ritesh Lala & Qian Liu<br> 
-        <a href="http://www.mat.ucsb.edu/delaneyj/Fusilli/Fusilli.html">Fusilli</a>, John Delaney<br> 
-        <a href="http://www.mat.ucsb.edu/~adams/594CM/springy_sketch.html">Springy Sketch</a>, David Adams<br> 
-        <a href="benFinal/site.html">Gesture</a>, Ben Alun-Jones<br> 
-      </div> 
  
       <div class="topic"> 
         <a class="title1">References &amp; Resources</a> 
         <p> 
-          <a class="week">Previous Course Site:</a><br> 
-          <a href="http://www.mat.ucsb.edu/201B/2009/">MAT 201B 2009</a> 
-        <p> 
-
+	<a class="week">Previous Course Site:</a><br> 
+	<a href="http://www.mat.ucsb.edu/201B/2009/">MAT 201B 2009</a> 
+	<p> 
 
 	<a class="week">Processing:</a><br> 
+	<a href="http://processing.org/">Processing home page</a><br>
 	<a href="http://www.amazon.com/gp/product/144937980X?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=144937980X">Getting Started With Processing, Casey Reas & Ben Fry</a><br>
 	<a href="http://www.amazon.com/gp/product/0123736021?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0123736021">Learning Processing, Daniel Shiffman</a><br>
 	<a href="http://www.amazon.com/gp/product/0123736021?ie=UTF8&tag=processing09-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0123736021">Processing: Creative Coding and Computational Art, Ira Greenberg</a><br>
 	<p> 
- 
- 
-          <a class="week">GPU Programming:</a><br> 
-          <a href="http://www.amazon.com/OpenGL-Shading-Language-Randi-Rost/dp/0321637631/">OpenGL Shading Language (The Orange Book)</a> 
-          / <a href="http://www.3dshaders.com/home/">Orange Book Resources</a><br> 
-          <a href="http://developer.nvidia.com/object/GPU_Gems_Home.html">GPU Gems 1 (online)</a><br> 
-          <a href="http://developer.nvidia.com/object/gpu_gems_2_home.html">GPU Gems 2 (online)</a><br> 
-          <a href="http://developer.nvidia.com/object/gpu-gems-3.html">GPU Gems 3 (online)</a><br> 
-          <a href="http://wiki.gamedev.net/index.php/D3DBook:Table_Of_Contents">D3D Book (online)</a><br> 
-          <a href="http://tog.acm.org/resources/shaderx/">ShaderX 1-7, GPU Pro (some of these are online)</a><br> 
-          <a href="http://developer.nvidia.com/object/cg_tutorial_home.html">The CG Tutorial (online)</a> 
-        <p> 
- 
- 
-          <a class="week">OpenGL &amp; Game Programming:</a><br> 
-          <a href="http://www.amazon.com/OpenGL-Programming-Guide-Official-Learning/dp/0321552628/">OpenGL Programming Guide (The Red Book)</a> 
-          / <a href="docs/RedBook.pdf">(old edition available online)</a><br> 
- 
-          <a href="http://www.amazon.com/Interactive-Computer-Graphics-Top-Down-Approach/dp/0321535863/">Interactive Computer Graphics: A Top Down Approach</a><br> 
-          <a href="http://www.gameprogramminggems.com/">Game Programming Gems 1-7, Best of</a><br> 
-        <p> 
- 
- 
- 
-          <!--
-          <a href="http://www.amazon.com/Applied-Practical-Techniques-Building-Depth/dp/0321108949/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1241450787&sr=8-1">Applied C++: Practical Techniques for Building Better Software </a><br>
-          <a href="http://www.amazon.com/Modern-Design-Programming-Patterns-Depth/dp/0201704315/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1241450600&sr=8-1">Modern C++ Design: Generic Programming and Design Patterns </a><br>
-          <a href="http://www.amazon.com/Template-Metaprogramming-Concepts-Techniques-Depth/dp/0321227255/ref=pd_bbs_4?ie=UTF8&s=books&qid=1241450600&sr=8-4">C++ Template Metaprogramming: Concepts, Tools, and Techniques from Boost and Beyond</a><p>
-          --> 
- 
- 
-          <a class="week">General Mathematics:</a><br> 
-          <a href="http://www.springerlink.com/content/u53316/">Mathematics for Computer Graphics (online, requires UCSB login)</a><br> 
-          <a href="http://www.amazon.com/Mathematics-Programming-Computer-Graphics-Development/dp/1584502770/">Mathematics for 3D Game Programming and Computer Graphics</a><br> 
- 
-        <p> 
- 
-          <a class="week">Geometry:</a><br> 
-          <a href="http://www.amazon.com/Beyond-Geometry-Classic-Einstein-Mathematics/dp/0486453502/">Beyond Geometry: Classic Papers from Riemann to Einstein</a><br> 
-          <a href="http://www.amazon.com/Curves-Dover-books-explaining-science/dp/048623701X/">The Curves of Life</a><br> 
- 
-          <a href="http://www.amazon.com/Algebraic-Topology-Allen-Hatcher/dp/0521795400/">Algebraic Topology</a><br> 
-          <a href="http://www.amazon.com/Curves-Surfaces-CAGD-Practical-Kaufmann/dp/1558607374/">Curves and Surfaces for CAGD: A Practical Guide</a><br> 
-          <a href="http://www.springerlink.com/content/h76732/">Geometry for Computer Graphics (online, requires UCSB login)</a><br> 
-          <a href="http://maven.smith.edu/~orourke/books/compgeom.html">Computational Geometry in C</a> /
-          <a href="http://maven.smith.edu/~orourke/books/ftp.html">C and Java Resources</a> <br> 
-          <a href="http://www.cs.uu.nl/geobook/">Computational Geometry: Algorithms and Applications</a><br> 
-          <a href="http://local.wasp.uwa.edu.au/~pbourke/geometry/">Paul Bourke's Geometry Pages</a> 
-        <p> 
- 
-          <a class="week">Physics &amp; Simulations</a><br> 
-          <a href="http://realtimecollisiondetection.net/">Real-time Collision Detection</a> <br> 
-          <a href="http://apress.com/book/view/9781590594728">Physics for Game Programmers</a> / <a href="http://apress.com/book/downloadfile/2078">Resources</a><br> 
-          <a href="http://www.springerlink.com/content/v5q202/">Vector Analysis for Computer Graphics (online, requires UCSB login)</a><br> 
-        <p> 
- 
-          <a class="week">Rotations:</a><br> 
-          <a href="http://www.amazon.com/Quaternions-Rotation-Sequences-Applications-Aerospace/dp/0691102988/">Quaternions and Rotation Sequences: A Primer with Applications to Orbits, Aerospace and Virtual Reality</a><br> 
-          <a href="http://www.amazon.com/Visualizing-Quaternions-Kaufmann-Interactive-Technology/dp/0120884003/">Visualizing Quaternions</a><br> 
-          <a href="http://www.amazon.com/Rotations-Quaternions-Double-Groups-Altmann/dp/0486445186/">Rotations, Quaternions, and Double Groups </a> 
-        <p> 
- 
- 
- 
-          <a class="week">Geometric Algebra:</a><br> 
-          <a href="http://www.amazon.com/Geometric-Algebra-Computer-Science-Revised/dp/0123749425/">Geometric Algebra for Computer Science: An Object-Oriented Approach to Geometry</a> 
-          / <a href="http://www.geometricalgebra.net/">Resources</a><br> 
-          <a href="http://www.springerlink.com/content/p72753/">Geometric Algebra: An Algebraic System for Computer Games and Animation (online, requires UCSB login)</a><br> 
-          <a href="http://www.amazon.com/Geometric-Algebra-Physicists-Chris-Doran/dp/0521715954/">Geometric Algebra for Physicists </a> 
-        <p> 
- 
- 
- 
+
+	<a class="week">Git:</a><br> 
+	<a href="http://git-scm.com/">git home page</a><br>
+	<a href="http://gitref.org/">git Reference</a> <br>
+	<a href="http://github.com/">github.com</a> &amp; <a href="http://help.github.com/">github help</a> <br>
+
+	<!--	
           <a class="week">Generative Processes:</a><br> 
           <a href="http://www.amazon.com/Self-Made-Tapestry-Pattern-Formation-Nature/dp/0198502435/">The Self-Made Tapestry: Pattern Formation in Nature</a><br> 
           <a href="http://www.amazon.com/Pamphlet-Architecture-27-Benjamin-Aranda/dp/1568985479/">Pamphlet Architecture 27: Tooling</a><br> 
           <a href="http://www.amazon.com/Protocells-Bridging-Nonliving-Living-Matter/dp/0262182688/">Protocells</a> 
         <p> 
- 
+	-->
       </div> 
     </div> 
   </body> 
