@@ -22,16 +22,29 @@
 	Using the powers of Google, the man command, and your ability to change directories, investigate the meaning of 3 programs that are in your PATH. Find 1 command which is (at least potentially) useful, 1 command which is odd, and 1 command which doesn't make sense. For example, in /usr/bin there is a command called "ypcat". I have no idea what this does. Reading the man page tells me that it was written by Theo De Raadt in 1993 and that it prints out all of the commands in a YP database. Hmm.
 	<p>   Write up a brief report describing what each of your 3 commands do and what useful options they take and post to the Command research thread in the 201B forum. 
 	<p>&nbsp;<br>
-	
-	<a class="week">Extend the Monster template sketch</a> (due 10/5/10 before class starts)
+
+	<a class="week">Examine the hierarchy of the Processing language</a> (due 10/5/10 before class starts)
 	<p>
-	Copy the code from the MonsterSketchTemplate folder and add it to a new folder inside of your ProcessingSketches repo. Call it something obvious like "MonsterSketchYourName" and make sure you rename the main Processing file and class accordingly.
+	Download the source code for the latest version of Processing. Find the source code for the "core" package. Sketch out the complete hierarchy of all of the graphics related classes. Take a photo of your sketch and upload it to YourName/hierarchy.jpg inside of the class materials directory.  
+	<p>&nbsp;<br>
+
+	<a class="week">Extend the MonsterGallery sketch</a> (due 10/5/10 before class starts)
 	<p>
-	Add at least 1 new property and 1 new method to the Monster class. 
+	Copy the MonsterGallery.tar.Z from the materials folder, untar and uncompress it, and then add it to a new folder inside of your ProcessingSketches repo.
+	<p>
+	Add a new Monster that extends from either the AngryMonster. 
 	<p> 
-	Add 3 new classes that extend from the base Monster class (and that make use of the property and method you just added.)
+	Add a new abstract Monster called ChaoticMonster that directly extends Monster (ie, on the same level as Friendly and Angry). Add 2 chaotic monsters to the project. Add at least 2 chaotic actions and 2 new properties specific to Chaotic monsters.
+	<p> 
+	Make it so that when you click on any of the Angry mosters it plays an angry sound.
 	<p>
-	Edit the "setup" method so that it instantiates some of these monsters and make sure that the "draw" method correctly draws your monsters to the screen.	
+	Make a new type of Friendly monster that does more than just give gifts when executing a friendlyAction (that is, it will override that class). Make the new friendly action method print something to the console.
+	<p> 
+	Make at least one of your new Monsters draw itself using drawing methods other than loadImage.
+	<p>
+	Make an IndifferentUnicorn that extends from Unicorn which randomly decides whether or not to give you gifts or just to ignore you.
+	<p>	
+	Edit the "setup" method so that it instantiates some of these monsters and make sure that the render methods correctly draw your monsters to the screen. (Obviously you'll have to change the size of the window or shrink the size of the monsters.)
 	<p>
 	Add and Commit all changes to your local repo (as often as you want!) and finally Push your changes to your remote repo before the deadline.
       </div>
