@@ -12,12 +12,12 @@ public class Hello {
   }
 
   public Hello() {
-     hello.sayHi();
+     sayHi();
   }
 
   public Hello(String greeting) {
     this.greeting = greeting;
-    hello.sayHi();
+    sayHi();
   }
 
   public void sayHi()

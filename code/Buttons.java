@@ -8,8 +8,6 @@ public class Buttons extends JPanel implements ActionListener
     b1.addActionListener(this);
     add(b1);
   } 
-  // private static void createAndShowGUI() {
-  // }
 
   public void actionPerformed(ActionEvent e) {
     System.out.println("you pressed the button!");
