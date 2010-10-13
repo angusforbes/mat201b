@@ -13,10 +13,11 @@ public class SetTest {
     for (String s : sset) { System.out.println(s); }
   
 
-    System.out.println("Persons...");
+    System.out.println("Persons..."); 
+    
     Set<Person> pset = new HashSet<Person>();
     Person p1 = new Person("Angus");
-    Person p2 = new Person("Angus");
+    Person p2 = new Person("Angus"); //if equality/hashCode methods are not overridden this will return True. That is, The Set will think they are different Person objects and allow both of them to be added to the Set.
     pset.add(p1);
     pset.add(p2);
     for (Person p : pset) { System.out.println(p); }
@@ -25,13 +26,14 @@ public class SetTest {
 
   class Person {
     String name;
+    String dob;
     public Person(String name) {
       this.name = name;
     }
     public String toString() {
       return name; 
     }
- 
+
     public boolean equals(Object o) {
       if (!(o instanceof Person))
       {
@@ -45,8 +47,10 @@ public class SetTest {
       return false;
     }
 
+    //This was generated with the Netbeans IDE.
     public int hashCode() {
-      int hash = 7;
+      int hash = 5;
+      hash = 17 * hash + (this.name != null ? this.name.hashCode() : 0);
       return hash;
     }
   }
