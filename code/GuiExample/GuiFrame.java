@@ -10,7 +10,7 @@ public class GuiFrame extends JFrame
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     //add Panels to this frame using a simple layout
-    add(new Gui(), BorderLayout.WEST);
+    add(new Gui(this), BorderLayout.WEST);
     add(new Sketch(), BorderLayout.CENTER);
   
     //Display the window.
