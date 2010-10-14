@@ -1,0 +1,60 @@
+
+<html> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>MAT 201B : Programming with Media Data : Problem Set #4</title> 
+    <link rel="stylesheet" type="text/css" href="../201B.css" /> 
+ 
+  </head> 
+  <body> 
+ 
+    <div class="main"> 
+      <a class="title1">Problem Set #4</a> <br> due 10/19/10 before class starts
+      <br> 
+      <div class="topic"> 
+  	<a class="week">Data Structures / OO Project</a><p>
+
+Your boss at Interactive Geometrics, Inc wants you to make a proof-of-concept, prototype application for demonstrating how to find the area of various shapes. Using your knowledge of Java, of object-oriented programming, of data structures, and of either Processing or the Java2D graphics library, you set about making an application which allows the user to select 1) a particular kind of shape, and 2) a particular number of shapes. When the user selects the shape and number, shapes of random sizes get rendered to the screen, and the total area of the shapes gets output to the console. For the proof of concept, you decide to create a Pentagon shape, a Circle shape, and a Hexagon shape. Since other developers will be adding other shapes in the future, you decide to create interfaces for the core functionality which future developers will also be required to implement.
+
+<p>
+Here are the interfaces you will use:
+<p>
+public interface AreaInformation { <br>
+&nbsp;&nbsp;public double calculateArea(); <br>
+}
+<p>
+public interface RenderingAlgorithm { <br>
+&nbsp;&nbsp;public void render(); <br>
+} 
+<p>
+
+The superclass of each of your geometric shapes will then implement these interfaces, requiring the subclasses to provide the calculateArea and render methods:
+<p>
+public abstract class GeometricShape implements AreaInformation, RenderingAlgorithm { <br>
+&nbsp;&nbsp;double area; <br>
+&nbsp;&nbsp;public double getArea() { return area; } <br>
+&nbsp;&nbsp;public void setArea(double area) { this.area = area; } <br>
+}
+<p>
+public class Pentagon extends GeometricShape { <br>
+&nbsp;&nbsp;//must provide a concrete method calculateArea and render to satisfy the contract of the interfaces <br>
+&nbsp;&nbsp;public double calculateArea() {...} <br>
+&nbsp;&nbsp;public void render() {...} <p>
+&nbsp;&nbsp;//other stuff...<br>
+}
+<p>
+When the program starts, you will create a HashMap to store a List of each of the geometric shapes. The respective shapes can then be retrieved by one of these strings: "Pentagons", "Circles", or "Hexagons". The GUI will ask the user to select the kind of shape, which will then retrieve the list of shapes and render it to the screen. You can initialize the Map like so:
+<p>
+Map<String, List<GeometricShape>> shapeMap = new HashMap<String, List<GeometricShape>>();
+
+	
+	<p>&nbsp;<br>
+
+      </div>
+
+
+    </div>
+  </body>
+</html> 
+
+
