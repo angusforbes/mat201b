@@ -1,0 +1,43 @@
+
+<html> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>MAT 201B : Programming with Media Data : Problem Set #5</title> 
+    <link rel="stylesheet" type="text/css" href="../201B.css" /> 
+ 
+  </head> 
+  <body> 
+ 
+    <div class="main"> 
+      <a class="title1">Problem Set #5</a> <br> due 11/2/10 before class starts
+      <br> 
+      <div class="topic"> 
+  	<a class="week">Collaborative Datagram Project</a><p>
+	  
+	For this week's assignment, you will write a simple server which receives a message from one computer, unpacks the message according to a defined protocol, processes that message, and then sends a new message to another computer. <p>
+	1) Create a thread that listens on a socket for an incoming UDP packet and then unpacks the packet to parse a message. <br>
+	2) Write code which creates a visual and an aural indication of the message in the packet. For instance, the information in the message might cause your computer to play a particular note, and also to draw a particular shape. You should be as creative as possible for this step, and use any library (Processing or other) that you want, but at the same time make it clear that you a receiving a specific message, and not just doing something totally randomly. <br>
+	3) Create a thread that packs a message within a datagram packet according to the defined protocol and then sends that message to another computer. <p>
+
+	Sample code for creating a server that sends receives and replies to a datagram packet is on the course website under the code directory.<p>
+	Our simple protocol will expect all messages to look like this: &lt;String&gt; &lt;Double&gt; &lt;String&gt; &lt;Double&gt;, etc. You will parse the message using methods from the java Scanner class. For instance, if the message reads: "volume 58.4 speed 101.0" you could use this code to extract the volume and speed: <p> 
+
+	&nbsp;&nbsp;Scanner s = new Scanner(theMessage); <br>
+	&nbsp;&nbsp;s.next(); <br>
+	&nbsp;&nbsp;double theVolume = s.nextDouble(); <br>
+	&nbsp;&nbsp;s.next(); <br>
+	&nbsp;&nbsp;String theSpeed = s.nextDouble(); <br>
+	&nbsp;&nbsp;s.close(); <br>
+	<p>
+	Of course feel free to change or extend the protocol, with the understanding that you must explain the protocol to your neighbors so that they can parse your message properly. <p>
+	You will need to test your program with your two neighbors before the in class presentation on November 2nd, where we will pass messages in a ring around the classroom. Make it easy to change the sender and reciever ports and addresses, as they will be assigned at the beginning of the demonstration.
+	<p>&nbsp;<br>
+
+      </div>
+
+
+    </div>
+  </body>
+</html> 
+
+
