@@ -37,6 +37,7 @@ public class DatagramServer extends Thread {
 
 	packet = new DatagramPacket(bufSend, bufSend.length, address, port);
 	socket.send(packet);
+      
       } catch (IOException ioe) {
 	System.err.println("Error! There was a problem in the server!");
 	ioe.printStackTrace();
@@ -48,6 +49,8 @@ public class DatagramServer extends Thread {
 
   public static void main(String[] args) { 
         new DatagramServer().start();
+
+
   }
 
 }

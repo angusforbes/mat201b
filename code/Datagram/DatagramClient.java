@@ -7,7 +7,7 @@ public class DatagramClient {
 
   private int PORT = 49999;
   private String ADDRESS = "127.0.0.1";
-  private String MESSAGE = "Angus";
+  private String MESSAGE = "GATES";
   
   private DatagramSocket socket = null;
 
@@ -29,11 +29,12 @@ public class DatagramClient {
     socket = new DatagramSocket();
 
     // send request
-    byte[] bufSend = MESSAGE.trim().getBytes();
+    byte[] bufSend = MESSAGE.getBytes();
     InetAddress inetAddress = InetAddress.getByName(ADDRESS);
     DatagramPacket packet = new DatagramPacket(bufSend, bufSend.length, inetAddress, PORT);
     socket.send(packet);
 
+    
     // get response
     byte[] bufReceive = new byte[1024]; 
     packet = new DatagramPacket(bufReceive, bufReceive.length);
@@ -42,7 +43,7 @@ public class DatagramClient {
     // display response
     String received = new String(packet.getData(), 0, packet.getLength());
     System.out.println(received);
-
+    
     socket.close();
   }
 }
