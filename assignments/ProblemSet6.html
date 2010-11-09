@@ -1,0 +1,45 @@
+
+<html> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>MAT 201B : Programming with Media Data : Problem Set #6</title> 
+    <link rel="stylesheet" type="text/css" href="../201B.css" /> 
+ 
+  </head> 
+  <body> 
+ 
+    <div class="main"> 
+      <a class="title1">Problem Set #6</a> <br> due 12/2/10 before class starts
+      <br> 
+      <div class="topic"> 
+	<a class="week">Set Puzzle Implementation</a><p>
+	  You will create a graphical implementation of the Set Puzzle game using OpenGL. The user will be presented with a board containing 12 cards in a legal configuration (i.e., no card is used twice). Users will be able to select 3 cards and receive feedback as to whether or not they have chosen a legal set. 
+
+
+      <div class="topic"> 
+	<a class="week">Set Puzzle Solver</a><p>
+	At the beginning of class you will be given a text file with game data representing each of the 12 cards in a Set puzzle. Your program must search these cards and find all 6 of the legal sets in the shortest amount of steps. As a benchmark, you can create a brute-force seach algorithm to compare against your more optimal search algorithm. 
+
+	Each card will be encoded in text file on its own line with 4 characters. <br>
+	Character 1 = {1,2,3}  //to indicate One, Two, or Three shapes. <br>
+	Character 2 = {R,G,B}  //to indcate a Red, Green, or Blue coloring. <br>
+	Character 3 = {S,D,P}  //to indcate a Squiggle, Diamond, or Pill shape. <br>
+	Character 4 = {O,C,H}  //to indcate Open, Closed, or Half-filled shading.<br>
+
+	<p>
+	For instance, a file might look like this:
+
+	1RSO
+	1GSH...
+
+	A test file you can use to test your solver can be found here: [<a href=""></a><br>]. But please note that the competition will use a different file, so please make sure and test your solver under many different board configurations.
+	
+	
+      </div>
+
+
+    </div>
+  </body>
+</html> 
+
+
