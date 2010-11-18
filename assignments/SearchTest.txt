@@ -1,0 +1,12 @@
+Oakland:San Francisco:40
+San Francisco:San Jose:140
+San Jose:Santa Cruz:10
+San Francisco:Santa Cruz:60
+San Francisco:San Luis Obispo:430
+San Luis Obispo:Goleta:230
+San Luis Obispo:Bakersfield:70
+San Luis Obispo:Solvang:55
+Solvang:Goleta:75
+Goleta:Santa Barbara:11
+Santa Barbara:Los Angeles:90
+Bakersfield:Los Angeles:130

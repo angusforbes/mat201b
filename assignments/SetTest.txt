@@ -1,0 +1,13 @@
+R:2:S:F
+R:3:S:E
+R:2:D:E
+B:2:D:H
+B:1:D:F
+R:2:P:F
+R:3:D:E
+B:1:P:F
+G:2:D:H
+R:1:P:E
+R:2:D:F
+R:2:D:H
+
