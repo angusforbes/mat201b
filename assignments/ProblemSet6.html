@@ -13,28 +13,50 @@
       <br> 
       <div class="topic"> 
 	<a class="week">Set Puzzle Implementation</a><p>
-	  You will create a graphical implementation of the Set Puzzle game using OpenGL. The user will be presented with a board containing 12 cards in a legal configuration (i.e., no card is used twice). Users will be able to select 3 cards and receive feedback as to whether or not they have chosen a legal set. 
+	  You will create a graphical implementation of the Set Puzzle game using OpenGL (either in Processing, Java, C/C++, etc). The user will be presented with a board containing 12 cards in a legal configuration (i.e., no card is used twice). Users will be able to select 3 cards and receive feedback as to whether or not they have chosen a legal set. 
 
 
       <div class="topic"> 
 	<a class="week">Set Puzzle Solver</a><p>
-	At the beginning of class you will be given a text file with game data representing each of the 12 cards in a Set puzzle. Your program must search these cards and find all 6 of the legal sets in the shortest amount of steps. As a benchmark, you can create a brute-force seach algorithm to compare against your more optimal search algorithm. 
+	At the beginning of class you will be given a text file with game data representing each of the 12 cards in a Set puzzle. Your program must search these cards and find all 6 of the legal sets in the shortest amount of steps. As a benchmark, you can create a brute-force seach algorithm to compare against your more optimal search algorithm. Each time you compare one quality of one card against another card you will increase a global counter. This counter will be used to test which solver implementation performs the best. For instance, your program could update the counter within a function like so: <p>
 
-	Each card will be encoded in text file on its own line with 4 characters. <br>
-	Character 1 = {1,2,3}  //to indicate One, Two, or Three shapes. <br>
-	Character 2 = {R,G,B}  //to indcate a Red, Green, or Blue coloring. <br>
+
+	public static boolean checkEquals(String a, String b) { <br>
+	&nbsp;&nbsp;Main.globalNumChecks++; <br>
+	&nbsp;&nbsp;return (a.equals(b)) ? true : false; <br>
+	} <br>
+	<p>
+	and call it from within each of your allSame or allDifferent comparisons: <p>
+	public static boolean allSame(String a, String b, String c) { <br>
+	&nbsp;&nbsp;boolean c1 = checkEquals(a, b); <br>
+	&nbsp;&nbsp;boolean c2 = checkEquals(a, c); <br>
+	&nbsp;&nbsp;return (c1 && c2) ? true : false; <br>
+	} <br>
+	<p>
+	which in turn are called when checking a particular quality for sameness or difference: <p>
+	&nbsp;&nbsp;boolean colorsAreTheSame = allSame(a.color,b.color,c.color); <br>
+	&nbsp;&nbsp;boolean colorsAreDifferent = allDifferent(a.color,b.color,c.color); <br>
+	&nbsp;&nbsp;boolean legalColor = (colorsAreTheSame || colorsAreDifferent) ? true : false; <br>
+	<p>
+	etc...
+	<p>
+  
+	
+	<p>
+	Each card will be encoded in text file on its own line with 4 characters. <p>
+	Character 1 = {R,G,B}  //to indcate a Red, Green, or Blue coloring. <br>
+	Character 2 = {1,2,3}  //to indicate One, Two, or Three shapes. <br>
 	Character 3 = {S,D,P}  //to indcate a Squiggle, Diamond, or Pill shape. <br>
-	Character 4 = {O,C,H}  //to indcate Open, Closed, or Half-filled shading.<br>
+	Character 4 = {E,F,H}  //to indcate Empty, Full, or Half-filled shading.<br>
 
 	<p>
-	For instance, a file might look like this:
-
-	1RSO
-	1GSH...
-
-	A test file you can use to test your solver can be found here: [<a href=""></a><br>]. But please note that the competition will use a different file, so please make sure and test your solver under many different board configurations.
+	A test file you can use to test your solver can be found here: [<a href="./SetTest.txt">SetTest.txt</a>]. But please note that the competition will use a different file, so please make sure and test your solver under many different board configurations.
 	
-	
+
+
+      <div class="topic"> 
+	<a class="week">Search Implemetation Visualization (Extra Credit)</a><p>
+	You will create a program that visualizes searches for the shortest path between two given points using a) a depth-first search (DFS) and b) a breadth-first search (BFS). Your program will first load in a text file which you will turn into a searchable tree structure and then traverse using the DFS and BFS. Your program will indicate which search method a) finds the best path first, and b) which method looks at the least number of paths in order to determine the best path. You may collaborate with another student on this project if you want (but NOT the other ones!).
       </div>
 
 
