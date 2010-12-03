@@ -1,0 +1,114 @@
+
+G:3:P:F
+R:1:S:H
+G:1:P:E
+R:3:D:E
+B:2:D:E
+G:2:S:F
+B:3:P:H
+G:1:D:F
+B:1:S:F
+G:2:D:H
+B:1:P:H
+B:1:P:E
+
+Set : G:3:P:F | B:2:D:E | R:1:S:H
+Set : G:3:P:F | G:2:S:F | G:1:D:F
+Set : B:2:D:E | B:1:S:F | B:3:P:H
+Set : R:1:S:H | G:2:D:H | B:3:P:H
+Set : R:1:S:H | G:1:D:F | B:1:P:E
+Set : G:2:S:F | B:1:P:H | R:3:D:E
+
+
+
+
+G:2:D:E
+G:3:D:F
+B:3:D:E
+G:2:S:H
+G:3:D:E
+R:3:P:E
+R:3:S:E
+R:3:D:F
+G:3:P:E
+G:3:S:E
+B:3:S:H
+R:3:S:F
+
+Set : G:3:D:E | G:3:P:E | G:3:S:E
+Set : G:3:P:E | B:3:D:E | R:3:S:E
+Set : G:3:P:E | B:3:S:H | R:3:D:F
+Set : G:3:D:F | R:3:P:E | B:3:S:H
+Set : R:3:P:E | G:3:S:E | B:3:D:E
+Set : G:3:S:E | B:3:S:H | R:3:S:F
+
+
+
+G:1:P:F
+R:3:P:E
+G:3:P:E
+G:2:P:H
+G:1:S:E
+B:3:P:E
+B:1:S:H
+R:2:P:H
+B:3:S:E
+G:3:D:F
+B:3:D:H
+R:1:P:F
+
+Set : G:1:P:F | B:3:P:E | R:2:P:H
+Set : G:1:P:F | G:3:P:E | G:2:P:H
+Set : G:1:S:E | G:3:D:F | G:2:P:H
+Set : R:3:P:E | B:3:P:E | G:3:P:E
+Set : R:3:P:E | R:2:P:H | R:1:P:F
+Set : B:3:P:E | G:2:P:H | R:1:P:F
+
+
+
+
+G:2:D:H
+B:1:S:H
+R:3:P:H
+R:3:D:E
+R:1:P:H
+G:2:D:F
+G:1:P:E
+G:2:D:E
+R:1:P:F
+B:1:P:E
+B:1:D:F
+B:3:S:E
+
+Set : G:2:D:H | R:1:P:F | B:3:S:E
+Set : G:2:D:H | B:1:S:H | R:3:P:H
+Set : G:2:D:H | G:2:D:F | G:2:D:E
+Set : G:2:D:H | B:1:D:F | R:3:D:E
+Set : R:1:P:H | G:2:D:F | B:3:S:E
+Set : B:1:S:H | B:1:P:E | B:1:D:F
+
+
+
+
+R:1:S:E
+R:2:D:E
+G:3:P:E
+B:1:P:H
+R:3:S:F
+B:1:S:E
+G:3:D:F
+G:3:S:F
+G:3:D:E
+B:2:S:H
+B:3:S:F
+R:1:D:F
+
+Set : R:1:S:E | B:2:S:H | G:3:S:F
+Set : R:3:S:F | B:3:S:F | G:3:S:F
+Set : R:2:D:E | B:1:S:E | G:3:P:E
+Set : R:2:D:E | B:1:P:H | G:3:S:F
+Set : B:1:S:E | B:2:S:H | B:3:S:F
+Set : B:2:S:H | G:3:P:E | R:1:D:F
+
+
+
